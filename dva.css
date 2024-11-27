@@ -1,0 +1,35 @@
+body {
+    background-color: #eeacd8; 
+    h1{
+    color:#be5586
+    }
+    p{color:#000000}
+    li{color:#000000}
+    span{color:#6438cc}
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hhh {color:#000000}
+#hhh {color: aqua;}
+[attr="hhh"] {color: rgb(236, 79, 39);}
+
+.one + .two {color:rgb(198, 252, 6)}
+.three,
+.four {
+    color: rgb(255, 0, 13);
+}
+ul > li{
+    text-decoration: underline;
+}
+
+.hhh .one{
+    line-height: 2.5;
+}
+
+[attr="hhh"] ~ .r{
+    font-size: 1.2rem;
+
+}
