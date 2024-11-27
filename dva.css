@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
 body {
+    font-family: 'Edu Australia VIC WA NT Hand Arrows', sans-serif;
+    font-family: "Edu AU VIC WA NT Arrows";
     background-color: #eeacd8; 
-    h1{
-    color:#be5586
-    }
-    p{color:#000000}
-    li{color:#000000}
-    span{color:#6438cc}
 }
+h1{color:#be5586}
+
+p{color:#000000}
+li{color:#000000}
+span{color:#6438cc}
+
 img {
     max-width: 100%;
     height: auto;
@@ -31,5 +34,9 @@ ul > li{
 
 [attr="hhh"] ~ .r{
     font-size: 1.2rem;
-
 }
+.three + .four {
+    font-weight: bold;
+}
+.as {border-radius: 30px;}
+.qw {border-radius: 30px;}
