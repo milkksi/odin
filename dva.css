@@ -40,3 +40,49 @@ ul > li{
 }
 .as {border-radius: 30px;}
 .qw {border-radius: 30px;}
+.four{box-sizing: border-box;
+    width: 100%;
+    border: solid #aa0c90 10px;
+    padding: 5px;}
+.five{height: 150px;}
+#hhh{width: 150px;}
+.one{max-height: 150px;}
+.r{max-width: 500px;}
+
+.wrapper {
+    position: relative;
+  }
+  
+  .dashed-box {
+    position: relative;
+    z-index: 1;
+    border: 4mm ridge rgba(45, 111, 235, 0.6);;
+    background: rgb(149, 227, 233);
+    height: 5em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    width: 800px;
+  }
+  .gold-box {
+    position: absolute;
+    z-index: 3; 
+    border: thick double #e6f700;
+    background: rgb(102, 238, 174);
+    width: 30%;
+    left: 60px;
+    top: 3em;
+  }
+  .green-box {
+    position: absolute;
+    z-index: 2; 
+    border: dashed #f15829;
+    background: rgb(206, 96, 221);
+    width: 40%;
+    left: 10%;
+    top: -25px;
+    height: 7em;
+    opacity: 0.9;
+  }
+span{
+    position: fixed;
+}
