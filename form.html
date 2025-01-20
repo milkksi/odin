@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Регистрация нового пользователя</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Личная информация</h2>
+            <form action="#" method="post" class="registration-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+                <label for="dob">Дата рождения:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label>Пол:</label>
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="male" required> Мужской
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="female"> Женский
+                </label>
+                
+
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+                <h2>Контактные данные</h2>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99" required>
+
+                <label for="contact-time">Удобный интервал для связи:</label>
+                <select id="contact-time" name="contact-time">
+                    <option value="morning">Утро</option>
+                    <option value="afternoon">День</option>
+                    <option value="evening">Вечер</option>
+                    <option value="night">Ночь</option>
+                </select>
+
+                <button type="submit">
+                    <i class="icon-submit"></i> Зарегистрироваться
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer style="position: fixed; bottom: 0; width: 100%;">
+        <p>&copy; 2024 Моя компания. Все права защищены.</p>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="https://yandex.ru" target="_blank">Яндекс</a></li>
+            <li><a href="https://wikipedia.org" target="_blank">Википедия</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

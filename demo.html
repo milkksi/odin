@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS эффекты</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif; 
+            background-color: #fccaf0; 
+            padding: 20px; 
+        }
+
+        
+        .example {
+            margin-bottom: 40px; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для блока */
+        }
+
+        
+        .linear-gradient {
+            background: linear-gradient(to right, #150d5e, #a295f0); /* Линейный градиент слева направо */
+            height: 200px; 
+        }
+
+        .radial-gradient {
+            background: radial-gradient(circle, #150d5e, #a295f0); /* Радиальный градиент от центра к краям */
+            height: 200px; 
+        }
+
+        .conic-gradient {
+            background: conic-gradient(from 90deg,  #150d5e, #a295f0, #5a44c0); /* Конический градиент */
+            height: 200px; 
+        }
+
+        
+        .transform-2d-translate {
+            background: #007bff; 
+            color: white;
+            height: 100px; 
+            width: 100px; 
+            display: flex; /* flexbox для центрирования содержимого */
+            align-items: center; 
+            justify-content: center; 
+            transition: transform 0.3s; /* Плавный переход для трансформации */
+        }
+
+        .transform-2d-translate:hover {
+            transform: translate(50px, 50px); /* Перемещение при наведении */
+        }
+
+        .transform-2d-rotate {
+            background: #28a745; 
+            color: white; 
+            height: 100px; 
+            width: 100px; 
+            display: flex; /* flexbox для центрирования содержимого */
+            align-items: center; 
+            justify-content: center; 
+            transition: transform 0.3s; /* Плавный переход для трансформации */
+        }
+
+        .transform-2d-rotate:hover {
+            transform: rotate(45deg); /* Поворот при наведении */
+        }
+
+        
+        .transform-3d-rotate {
+            background: #dc3545;
+            color: white; 
+            height: 100px; 
+            width: 100px; 
+            display: flex; /* flexbox для центрирования содержимого */
+            align-items: center; 
+            justify-content: center; 
+            transition: transform 0.3s; /* Плавный переход для трансформации */
+            transform-style: preserve-3d; /* Сохранение 3D стиля */
+        }
+
+        .transform-3d-rotate:hover {
+            transform: rotateY(180deg); /* Поворот по оси Y при наведении */
+        }
+
+        .transform-3d-scale {
+            background: #ffc107; 
+            color: white;
+            height: 100px; 
+            width: 100px; 
+            display: flex; /* flexbox для центрирования содержимого */
+            align-items: center; 
+            justify-content: center; 
+            transition: transform 0.3s; /* Плавный переход для трансформации */
+            transform-style: preserve-3d; /* Сохранение 3D стиля */
+        }
+
+        .transform-3d-scale:hover {
+            transform: scale(1.5); /* Масштабирование при наведении */
+        }
+
+        
+        .transition-example {
+            background: #17a2b8;
+            color: white; 
+            height: 100px; 
+            width: 100px; 
+            display: flex; /* Используем flexbox для центрирования содержимого */
+            align-items: center; 
+            justify-content: center; 
+            transition: background-color 0.3s, transform 0.3s; /* Плавные переходы для фона и трансформации */
+        }
+
+        .transition-example:hover {
+            background-color: #138496; /* Изменение цвета фона при наведении */
+            transform: scale(1.1); /* Увеличение размера при наведении */
+        }
+
+        .transition-opacity {
+            background: #6f42c1; 
+            color: white; 
+            height: 100px; 
+            width: 100px; 
+            display: flex; /* flexbox для центрирования содержимого */
+            align-items: center; 
+            justify-content: center; 
+            opacity: 1; /* Полная непрозрачность */
+            transition: opacity 0.3s; /* Плавный переход для непрозрачности */
+        }
+
+        .transition-opacity:hover {
+            opacity: 0.5; /* Полупрозрачность при наведении */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Примеры CSS эффектов</h1> 
+
+    <div class="example">
+        <h2>Линейный градиент</h2>
+        <div class="linear-gradient"></div> 
+    </div>
+
+    <div class="example">
+        <h2>Радиальный градиент</h2>
+        <div class="radial-gradient"></div> 
+    </div>
+
+    <div class="example">
+        <h2>Конический градиент</h2>
+        <div class="conic-gradient"></div> 
+    </div>
+
+    <div class="example">
+        <h2>2D Преобразование: Перемещение</h2>
+        <div class="transform-2d-translate">Перемещение</div> 
+    </div>
+
+    <div class="example">
+        <h2>2D Преобразование: Поворот</h2>
+        <div class="transform-2d-rotate">Поворот</div> 
+    </div>
+
+    <div class="example">
+        <h2>3D Преобразование: Поворот по оси Y</h2>
+        <div class="transform-3d-rotate">3D Поворот</div> 
+    </div>
+
+    <div class="example">
+        <h2>3D Преобразование: Масштабирование</h2>
+        <div class="transform-3d-scale">Масштабирование</div> 
+    </div>
+
+    <div class="example">
+        <h2>Переход: Изменение цвета и размера</h2>
+        <div class="transition-example">Переход</div> 
+    </div>
+
+    <div class="example">
+        <h2>Переход: Изменение непрозрачности</h2>
+        <div class="transition-opacity">Непрозрачность</div> 
+    </div>
+
+</body>
+</html>
