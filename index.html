@@ -1,50 +1,112 @@
-<html>
-    <head>
-        <title>Клубника</title>
-        <link rel="stylesheet" href="dva.css">
-    </head>
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Клубника</title> <!-- Заголовок страницы, отображаемый в вкладке браузера -->
+    <link rel="stylesheet" href="dva.css"> 
+</head>
+<body>
+    <header> 
+        <h1>Клубника</h1> 
+        <nav> 
+            <ul> <!-- Начало списка навигации -->
+                <li><a href="#about">О клубнике</a></li> 
+                <li><a href="#benefits">Польза</a></li> 
+                <li><a href="#contact">Контакты</a></li> 
+            </ul> <!-- Конец списка навигации -->
+        </nav> 
+    </header> 
 
-    <body>
-        <span>
-            <h1>
-                strawberry
-            </h1>
-        </span>
-
-        <p id="hhh">Клубника - это ягода красного цвета, которая имеет множество полезных свойств для здоровья.</p> 
-        <p attr="hhh">Она богата антиоксидантами и витаминами, такими как витамин С и К.</p>
-        <p class="r">Клубника также содержит вещества, которые могут помочь снизить уровень холестерина в крови и улучшить функцию сердца. Она имеет приятный вкус и широко используется в различных десертах, напитках и салатах.</p></p>   
-        
-        
-        <img class="as" src="kl.jpg" alt = "клубника" width="300" height="310"/>
-        <img class="qw" src="kkkkk.jpg" width="300" height="310"/>        
-        
-        <ul class="hhh">
-            <li class="one">gdgdgfd Клубника - единственная ягода, которая имеет свои семена на поверхности, а не внутри плода, таким образом, она является не фруктом, а настоящей ягодой.</li>
-            <li class="two">Существует более 600 видов клубники, каждый из которых имеет свой уникальный вкус и аромат. </li>
-            <li class="three">Клубника – один из немногих фруктов, которые продолжают созревать после того, как их собрали. Они могут даже улучшить свой вкус и аромат, если оставить на несколько дней при правильных условиях.</li>
-            <li class="four">Клубника содержит много витамина C. В 100 г клубники содержится около 60 мг витамина C, что составляет более 100% суточной нормы для взрослого человека.</li>
-            <li class="five">Клубника может быть полезна для сердца. Она содержит антиоксиданты и противовоспалительные соединения, которые могут помочь поддерживать здоровье сердечно-сосудистой системы.</li>
-            <li>Клубника не только вкусная, но и питательная. Она низкокалорийна и богата клетчаткой, что делает её отличным выбором для диеты.</li>
-            <li>Рекорд по сбору клубники! Самый большой плод клубники весил 250 граммов и был выращен в Японии в 2015 году.</li>
+    <main> 
+        <section id="about"> 
+            <p id="hhh">Клубника - это ягода красного цвета, которая имеет множество полезных свойств для здоровья.</p> 
+            <p attr="hhh">Она богата антиоксидантами и витаминами, такими как витамин С и К.</p> 
+            <div class="card"> 
+                <div class="loader"></div> <!-- Элемент загрузки, отображаемый до появления контента -->
+                <div class="card-content" style="display: none;"> <!-- Содержимое карточки, изначально скрыто -->
+                    <h2>Карточка</h2> <!-- Заголовок внутри карточки -->
+                    <p>клубника в целом крутая</p> <!-- Описание внутри карточки -->
+                </div> 
+            </div> 
+            <p class="r">Клубника также содержит вещества, которые могут помочь снизить уровень холестерина в крови и улучшить функцию сердца. Она имеет приятный вкус и широко используется в различных десертах, напитках и салатах.</p> 
             
-        </ul>
-        <div class="wrapper">
-            <div class="dashed-box">ежегодно</div>
-            <div class="gold-box">превышает 9 миллионов тонн</div>
-            <div class="green-box">Сбор клубники</div>
-          </div>
-        <p>
-            <h3>
-                Links:
-            </h3>
-        </p>
-        <li>
-            <a href="https://yandex.ru/search/?text=%D0%BA%D0%BB%D1%83%D0%B1%D0%BD%D0%B8%D0%BA%D0%B0&lr=213&clid=2411726"
-            target="_blank"> Яндекс</a>
-        </li>
-        <li>
-            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D1%83%D0%B1%D0%BD%D0%B8%D0%BA%D0%B0" target="_blank">Википедия</a>
-        </li>
-    </body>
+            <figure> 
+                <img class="as" src="kl.jpg" alt="клубника" width="300" height="310" loading="lazy" /> 
+                <figcaption>Клубника</figcaption> 
+            </figure> 
+            
+            <figure> 
+                <img class="qw" src="kkkkk.jpg" alt="другое изображение клубники" width="300" height="310" loading="lazy" /> 
+                <figcaption>Другая клубника</figcaption> 
+            </figure> 
+            
+            <ul class="hhh"> 
+                <ul class="grid-container"> <!-- элементы грида-->
+                    <li class="one">Клубника - единственная ягода, которая имеет свои семена на поверхности, а не внутри плода.</li>
+                    <li class="two">Существует более 600 видов клубники, каждый из которых имеет свой уникальный вкус и аромат.</li>
+                    <li class="three">Клубника – один из немногих фруктов, которые продолжают созревать после того, как их собрали.</li>
+                </ul>
+                 
+                <li class="four" id="benefits">Клубника содержит много витамина C. В 100 г клубники содержится около 60 мг витамина C.</li> 
+                <li class="five">Клубника может быть полезна для сердца, содержит антиоксиданты и противовоспалительные соединения.</li> 
+                <li>Клубника не только вкусная, но и питательная. Она низкокалорийна и богата клетчаткой.</li> 
+                <li>Рекорд по сбору клубники! Самый большой плод клубники весил 250 граммов.</li> 
+            </ul> 
+            
+            <div class="wrapper"> <!-- элементы флексбокса -->
+                <div class="dashed-box">Сбор клубники</div> 
+                <div class="gold-box">ежегодно</div> 
+                <div class="green-box">превышает 9 миллионов тонн</div> 
+            </div> 
+            
+            <h3>Ссылки:</h3> 
+            <ul> 
+                <li>
+                    <a href="https://yandex.ru/search/?text=%D0%BA%D0%BB%D1%83%D0%B1%D0%BD%D0%B8%D0%BA%D0%B0&lr=213&clid=2411726" target="_blank">Яндекс о клубнике</a> 
+                </li>
+                <li>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D1%83%D0%B1%D0%BD%D0%B8%D0%BA%D0%B0" target="_blank">Википедия о клубнике</a> 
+                </li>
+            </ul> 
+        </section> 
+
+        <section id="contact"> 
+            <h3>Обратная связь</h3> 
+            <form action="#" method="post" class="contact-form"> 
+                <label for="name">Имя:</label> 
+                <input type="text" id="name" name="name" required> 
+
+                <label for="email">Электронная почта:</label> 
+                <input type="email" id="email" name="email" required> 
+
+                <label for="message">Сообщение:</label> 
+                <textarea id="message" name="message" rows="4" required></textarea> 
+
+                <button type="submit">Отправить</button> 
+            </form> 
+        </section> 
+        
+    </main> <!-- Конец основного содержимого страницы -->
+
+    <footer> 
+        <p>&copy; 2024 Клубника. Все права защищены.</p> 
+        <ul> 
+            <li><a href="#about">О клубнике</a></li> 
+            <li><a href="#contact">Контакты</a></li> 
+            <li><a href="https://yandex.ru" target="_blank">Яндекс</a></li> 
+            <li><a href="https://wikipedia.org" target="_blank">Википедия</a></li> 
+        </ul> 
+    </footer> 
+
+    <script>
+        // Ждем 3 секунды, затем показываем содержимое карточки и скрываем loader
+        setTimeout(function() {
+            document.querySelector('.loader').style.display = 'none'; 
+            const cardContent = document.querySelector('.card-content'); 
+            cardContent.style.display = 'block'; 
+            cardContent.style.animation = 'fadeIn 1s ease'; 
+        }, 3000); 
+    </script> 
+</body>
 </html>
